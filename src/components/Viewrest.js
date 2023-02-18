@@ -32,7 +32,7 @@ function Viewrest() {
   console.log(viewrest);
 
   return (
-    <div>
+    <div className='ms-5'>
         {
 
             viewrest?(
@@ -52,7 +52,7 @@ function Viewrest() {
                            
                         </ListGroup> 
                         <> <Restop  op={viewrest.operating_hours} /> Operating Hours</>
-                            <> <Restreview review={viewrest.reviews} /> </>
+                            {/* <> <Restreview review={viewrest.reviews} /> </> */}
                     </Col>
                 </Row>
             ):'null'
